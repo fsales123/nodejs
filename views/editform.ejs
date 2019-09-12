@@ -1,0 +1,30 @@
+<div class="container">
+    <h1>Alteração</h1>
+    <hr />
+    <div class="row">
+      <div class="col-md-6">
+        <form action="edit/{{clientes.id}}" method="post">
+            <div class="form-group">
+                <input type="text" name="nomeCli" class="form-control" value={{clientes.nomeCli}} placeholder="Name" />
+            </div>
+            <div class="form-group">
+                <input type="text" name="sku" class="form-control" value={{product.sobrenome}} placeholder="sobrenome" />
+            </div>
+            <div class="form-group">
+                <input type="text" name="price" class="form-control" value={{product.empresa}} placeholder="empresa" />
+            </div>
+            <div class="form-group">
+                <button class="btn btn-info">Save Product</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <form method="POST">
+    <input type="text" name="nomeCli">
+    <input type="text" name="sobrenome">
+    <input type="text" name="empresa">
+    <input type="submit">
+</form>
